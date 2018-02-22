@@ -2,7 +2,7 @@
 
 console.log('App.js is running');
 
-app = {
+var app = {
   title: 'Decide',
   subtitle: 'We make the decisions',
   options: ['One', 'Two']
