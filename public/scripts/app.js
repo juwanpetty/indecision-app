@@ -1,28 +1,38 @@
 'use strict';
 
-function square(x) {
-    return x * x;
+var add = function add(a, b) {
+    // console.log(arguments);
+    return a + b;
+};
+console.log(add(55, 1));
+
+var user = {
+    name: 'Juwan',
+    cities: ['New York', 'Atlanta', 'Miami'],
+    printPlacesLived: function printPlacesLived() {
+        var _this = this;
+
+        var cityMessages = this.cities.map(function (city) {
+            return _this.name + ' has lived in ' + city;
+        });
+
+        return cityMessages;
+    }
 };
 
-console.log(square(3));
+console.log(user.printPlacesLived());
 
-// const squareArrow = (x) => {
-//     return x * x;
-// };
+// challenge are
+var multiplier = {
+    num: [2, 3, 4],
+    multiplyBy: 5,
+    multiply: function multiply() {
+        var _this2 = this;
 
-var squareArrow = function squareArrow(x) {
-    return x * x;
+        return this.num.map(function (num) {
+            return num * _this2.multiplyBy;
+        });
+    }
 };
 
-console.log(squareArrow(4));
-
-var getFirstName = function getFirstName(fullName) {
-    return fullName.split(' ')[0];
-};
-var getFirstNameTwo = function getFirstNameTwo(fullName) {
-    return fullName.split(' ')[0];
-};
-
-var fullName = 'Juwan Petty';
-console.log(getFirstName(fullName));
-console.log(getFirstNameTwo(fullName));
+console.log(multiplier.multiply());
