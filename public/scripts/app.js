@@ -47,6 +47,7 @@ var user = {
     age: 21,
     location: 'Atlanta'
 };
+
 function getLocation(location) {
     if (location) {
         return React.createElement(
