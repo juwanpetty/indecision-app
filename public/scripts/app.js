@@ -144,7 +144,7 @@ var Option = function Option(props) {
     return React.createElement(
         'div',
         null,
-        undefined.props.optionText
+        props.optionText
     );
 };
 
