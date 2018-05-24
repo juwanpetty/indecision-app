@@ -1,5 +1,6 @@
 {
   "name": "indecision-app",
+  "description": "Let the computer choose for you.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/juwanpetty/indecision-app.git",
